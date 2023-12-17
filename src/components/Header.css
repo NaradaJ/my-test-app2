@@ -1,0 +1,36 @@
+/* Header.css */
+
+/* Navbar styling */
+.MDBNavbar {
+    background-color: #ffffff; /* Set the background color for the navbar */
+  }
+  
+  /* Navbar item styling */
+  .MDBNavbarItem {
+    margin-right: 10px; /* Adjust the margin between navbar items */
+  }
+  
+  /* Navbar link styling */
+  .MDBNavbarLink {
+    color: #000000; /* Set the color for the navbar links */
+    text-decoration: none; /* Remove the default underline on links */
+    font-weight: bold; /* Set the font weight for the links */
+  }
+  
+  /* Active navbar item styling */
+  .MDBNavbarItem.active .MDBNavbarLink {
+    color: #007bff; /* Set the color for the active link */
+  }
+  
+  /* Navbar toggle button styling */
+  .MDBNavbarToggler {
+    background-color: #007bff; /* Set the background color for the toggle button */
+  }
+  
+  /* Collapse styling */
+  .MDBCollapse {
+    justify-content: flex-end; /* Align the collapse content to the right */
+  }
+  
+  /* Add more styles as needed */
+  

@@ -1,0 +1,28 @@
+/* Clock.css */
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: center;
+    height: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #00ffea; /* Text color */
+    background-color: #333; /* Background color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 234, 0.5); /* Optional box shadow for a futuristic look */
+    opacity: 0.5;
+  }
+  
+  .time {
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    font-size: small;
+  }
+  
