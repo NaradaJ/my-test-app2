@@ -1,0 +1,43 @@
+/* Hero.css */
+
+.Hero {
+    position: relative;
+    height: 100vh; /* Set the height of your hero section */
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Hide overflow to prevent scroll bars */
+    border-radius: -10%;
+  }
+  
+  .slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease; /* Smooth transition */
+    opacity: 1; /* Set the initial opacity */
+  }
+  
+  .slideshow.fade-out {
+    opacity: 0.5; /* Set the opacity to 0 during the transition out */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    transition: opacity 1.5s ease; /* Smooth transition */
+    opacity: 0.9; /* Set the initial opacity */
+  }
+  
+  .Hero:hover .slideshow {
+    opacity: 1 /* Adjust the opacity on hover */
+  }
+  
+  .Hero:hover .content {
+    opacity: 1; /* Adjust the opacity on hover */
+  }
+  

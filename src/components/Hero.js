@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
+import Clock from './Clock';
+import './Clock';
 
 const images = [
-  'https://wallpapercave.com/dwp1x/wp10469287.jpg',
-  'https://wallpapercave.com/dwp1x/wp10469257.jpg',
-  'https://wallpapercave.com/dwp1x/wp7763010.jpg',
+  'https://wallpapercave.com/dwp1x/wp10469348.jpg',
+  'https://wallpapercave.com/dwp1x/wp10469290.jpg',
+  'https://wallpapercave.com/dwp1x/wp9223984.jpg',
   // Add more image URLs as needed
 ];
 
@@ -30,7 +32,7 @@ const Hero = () => {
         }}
       />
       <div className="content">
-        <h1>Welcome to Your Website</h1>
+        <h1>To Change the CHANGE</h1>
         <p>Discover amazing things here!</p>
       </div>
     </div>
