@@ -1,0 +1,114 @@
+/* About.css */
+
+/* Style the container */
+.about-container {
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    background-image: url(https://www.shutterstock.com/shutterstock/videos/1102891885/thumb/1.jpg?ip=x480);
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Stormy thunder animation keyframes */
+@keyframes stormyThunder {
+    0%, 100% {
+        opacity: 0.4;
+        transform: translateY(0);
+    }
+    25% {
+        opacity: 0.1;
+        transform: translateY(-5px);
+    }
+    50% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 0.4;
+        transform: translateY(-5px);
+    }
+}
+
+/* Corrected member-cards styling */
+.member-cards {
+    background: black;
+}
+
+/* Stormy thunder animation styling */
+.about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    animation: stormyThunder 0.5s infinite; /* Adjust the duration of the stormy thundering animation */
+    animation-iteration-count: 10;
+    opacity: 0;
+}
+
+/* Text styling */
+.mission {
+    margin-top: 0;
+    padding: auto;
+    font-size: 25px;
+    color: #d3caca;
+    margin-bottom: 40px;
+    padding: 20px; /* Add padding to the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.history {
+    font-size: 16px;
+    color: #f8ebeb;
+    padding: 20px; /* Add padding to the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.member-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* Three columns */
+    gap: 20px; /* Adjust the gap between cards */
+    margin-top: 20px; /* Adjust the margin at the top of the cards */
+    margin-bottom: 40px;
+  }
+  
+  /* Style for individual member cards */
+  .member-card {
+    border: 1px solid #ddd; /* Border color */
+    padding: 15px; /* Padding inside the card */
+    border-radius: 5px; /* Border radius for rounded corners */
+    background-color: #1a0202e1; /* Card background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+  }
+  
+  /* Style for member name */
+  .member-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #1a0202e1;
+  }
+  
+  /* Style for member role */
+  .member-card p:first-of-type {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #ddd; /* Light gray text color */
+  }
+  
+  /* Style for member description */
+  .member-card p:last-of-type {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    color: #ccc; /* Slightly lighter gray text color */
+  }

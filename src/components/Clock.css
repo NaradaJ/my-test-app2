@@ -8,17 +8,20 @@
     justify-content: center;
     height: 5px;
     font-family: 'Roboto', sans-serif;
-    color: #00ffea; /* Text color */
-    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(45deg, #404040, #1a1a1a);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 234, 0.5); /* Optional box shadow for a futuristic look */
-    opacity: 0.5;
+    border-style: inset;
+    border-width: medium;
+    border-radius: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Optional box shadow for a futuristic look */
+    opacity: 0.7  ;
   }
   
   .time {
     font-size: small;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 10px;
   }
   

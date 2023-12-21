@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
+import Weather from './Weather';
 
-const Weather = () => {
+const WeatherData = () => {
   const apiKey = '7065ce21dcb465f5c959c372aa153780';
   const city = 'Colombo';
 
@@ -20,9 +21,9 @@ const Weather = () => {
 
   return (
     <div>
-      <WeatherData/>
+      <Weather/>
     </div>
   );
 };
 
-export default Weather;
+export default WeatherData;

@@ -1,33 +1,47 @@
 /* Weather.css */
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .weather-container {
-    background-color: #282c34;
-    color: #61dafb;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  .weather-container h2 {
-    margin-bottom: 15px;
-    font-size: 24px;
-  }
-  
-  .weather-container div {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .weather-container strong {
-    font-weight: bold;
-  }
-  
-  .weather-container div svg {
-    font-size: 50px;
-    margin-top: 10px;
-  }
-  
-  /* Add more styles as needed */
-  
+  mix-blend-mode: difference;
+  background-color: transparent;
+  color: color(from color srgb r g b);
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease; /* Apply the fadeIn animation */
+
+}
+
+.weather-container h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.weather-container div {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.weather-container strong {
+  font-weight: 100;
+  font-variant-caps: small-caps;
+}
+
+.weather-container div svg {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+/* Add more styles as needed */

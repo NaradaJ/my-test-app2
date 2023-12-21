@@ -1,11 +1,13 @@
-// Weather.js
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { WiDaySunny, WiCloudy, WiRain, WiSnow, WiThunderstorm } from 'react-icons/wi';
+import './Weather.css';
+import './WeatherData';
 
-const Weather = ({ apiKey, city }) => {
+const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
+  const apiKey = '7065ce21dcb465f5c959c372aa153780';
+  const city = 'Colombo';
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -60,9 +62,7 @@ const Weather = ({ apiKey, city }) => {
       <div>
         <strong>Weather:</strong> {weather[0].description}
       </div>
-      <div>
-        {getWeatherIcon(weather[0].icon)}
-      </div>
+      <div>{getWeatherIcon(weather[0].icon)}</div>
     </div>
   );
 };

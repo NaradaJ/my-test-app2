@@ -2,21 +2,22 @@
 
 /* Style the entire header */
 .Header {
-  background-color: #333; /* Set the background color for the header */
+  background-color: #333;
   height: auto;
+  opacity: 5;
 }
 
 /* Style the Navbar */
 .navbar {
   display: flex;
-  padding: 10px 20px; /* Add padding to the Navbar */
+  padding: 10px 20px;
 }
 
 /* Style the Navbar.Brand */
 .navbar-brand {
   font-size: 32px;
   font-family: 'Times New Roman', Times, serif;
-  animation: heartBeatAnimation 1s infinite; /* Apply heartbeat animation */
+  animation: heartBeatAnimation 1s infinite;
 }
 
 /* Heartbeat animation */
@@ -44,45 +45,73 @@
 /* Style the entire Nav-btns container */
 .Nav-btns {
   display: flex;
-  margin-left: auto; /* Move to the right end */
+  margin-left: auto;
   align-items: center;
-  background-color: #333; /* Set background color for the container */
-  padding: 5px; /* Add padding to the container */
+  background-color: #333;
+  padding: 5px;
+  gap: 10px;
+
 }
 
-/* Style the individual Nav.Link items */
-.Nav-btns .nav-link {
-  color: #fff; /* Set text color to white */
-  margin: 0 5px; /* Add spacing between the navigation items */
+a{
+  text-decoration: none;
+  color: white;
+  color: #fff;
+  margin: 0 10px; /* Adjust the margin for space between buttons */
   font-weight: bold;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: none;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Style the individual Nav.Link items as buttons with space */
+.Nav-btns .nav-link {
+  color: #fff;
+  margin: 0 10px; /* Adjust the margin for space between buttons */
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: none;
+  background-color: #555;
+  border-radius: 5px;
+  
 }
 
 /* Style the Nav.Link items on hover */
-.Nav-btns .nav-link:hover {
-  color: #555; /* Set text color on hover */
+a:hover {
+  background-color: #777;
 }
 
 /* Style the NavDropdown */
 .Nav-btns .nav-item.dropdown {
-  position: relative; /* Position dropdown relative to the parent */
+  position: relative;
 }
 
 /* Style the dropdown menu items */
 .Nav-btns .nav-item.dropdown .dropdown-menu {
-  background-color: #333; /* Set background color for the dropdown menu */
-  border: none; /* Remove border */
+  background-color: #333;
+  border: none;
 }
 
-/* Style the dropdown menu items */
+/* Style the dropdown menu items as buttons with space */
 .Nav-btns .nav-item.dropdown .dropdown-menu a {
-  color: #fff; /* Set text color to white */
-  padding: 10px 15px; /* Add padding to each item */
+  color: #fff;
+  padding: 10px 15px;
   font-weight: bold;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  border: none;
+  background-color: #555;
+  border-radius: 5px;
+  margin: 5px 0; /* Adjust the margin for space between buttons */
 }
 
 /* Style the dropdown menu items on hover */
 .Nav-btns .nav-item.dropdown .dropdown-menu a:hover {
-  background-color: #333; /* Set background color on hover */
+  background-color: #777;
 }

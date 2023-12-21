@@ -1,30 +1,30 @@
 // Header.js
-
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import the Bootstrap styles
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import Clock from './Clock';
 
 const Header = () => {
   return (
     <header className='Header'>
-      <Navbar bg="#333" variant="dark">
+      <Navbar>
         <Navbar.Brand> TechBiz </Navbar.Brand>
-        <Clock/>
+        <Clock />
         <Nav className="Nav-btns">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">About</Nav.Link>
-          <NavDropdown
+          <Link to="/home">Home</Link>
+          <Link to="/about">About</Link>
+          <NavDropdown Link to="/services"
             title="Services"
             id="basic-nav-dropdown"
-            drop="down" // Set the direction of the dropdown
+            drop="down"
           >
             <NavDropdown.Item href="#">Service 1</NavDropdown.Item>
             <NavDropdown.Item href="#">Service 2</NavDropdown.Item>
             <NavDropdown.Item href="#">Service 3</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="#">Contact</Nav.Link>
+          <Link to="/contact">Contact</Link>
         </Nav>
       </Navbar>
     </header>

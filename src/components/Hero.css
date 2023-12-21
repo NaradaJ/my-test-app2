@@ -2,11 +2,12 @@
 
 .Hero {
     position: relative;
-    height: 100vh; /* Set the height of your hero section */
+    height: 150vh; /* Set the height of your hero section */
     color: #fff;
     text-align: center;
     overflow: hidden; /* Hide overflow to prevent scroll bars */
     border-radius: -10%;
+    opacity: 2;
   }
   
   .slideshow {
