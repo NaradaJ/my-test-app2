@@ -1,0 +1,47 @@
+/* ServiceCard.css */
+
+/* Style for the entire service card container */
+.service-card {
+    border: 1px solid #ddd; /* Border color */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background-color: #f8f8f8; /* Card background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+  }
+  
+  /* Style for service name */
+  .service-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333; /* Dark text color */
+  }
+  
+  /* Style for service description */
+  .service-card p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #555; /* Slightly darker gray text color */
+  }
+  
+  /* Style for the subscription button */
+  .service-card button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    border-radius: 5px; /* Border radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+  }
+  
+  /* Style the button on hover */
+  .service-card button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+  
+  /* Adjust the card's scale on hover */
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
